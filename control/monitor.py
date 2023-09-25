@@ -44,8 +44,11 @@ def analyze_data():
         state = item['station__location__state__name']
         city = item['station__location__city__name']
         user = item['station__user__username']
+        # Se agrega variable para el valor recibido
+        received_value = item["check_value"]
 
-        if item["check_value"] > max_value or item["check_value"] < min_value:
+        # Se modifica la condicion para la generación e la alerta
+        if country == "colombia" and variable == "cemperatura" and received_value > 15:
             alert = True
 
         if alert:
