@@ -156,7 +156,7 @@ LOGOUT_REDIRECT_URL = '/login/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Dirección del bróker MQTT
-MQTT_HOST = "44.202.28.61"
+MQTT_HOST = "18.208.152.205"
 
 # Puerto del bróker MQTT
 MQTT_PORT = 8082
