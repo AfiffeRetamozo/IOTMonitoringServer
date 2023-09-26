@@ -48,7 +48,7 @@ def analyze_data():
         received_value = item["check_value"]
 
         # Se modifica la condicion para la generación e la alerta
-        if country == "colombia" and variable == "temperatura" and received_value > 15:
+        if country == "colombia" and variable == "humedad" and received_value > 55:
             alert = True
 
         if alert:
